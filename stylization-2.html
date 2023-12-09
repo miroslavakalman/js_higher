@@ -135,5 +135,46 @@
             div8.style.background = 'none';
         });
     </script>  -->
+
+    <!-- Чтение свойств из CSS файлов в JavaScript -->
+    <!-- 1 -->
+    <!-- <div id="div9">
+        text
+    </div>
+    <button id="b11">print</button>
+
+    <style>
+        #div9 {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        let div9 = document.querySelector('#div9');
+        let computedStyle = getComputedStyle(div9);
+        console.log(computedStyle.width, computedStyle.height); 
+    </script> -->
+
+    <!-- Преобразование прочитанных значений  -->
+    <!-- <div id="div10">
+        text
+    </div>
+    <button id="b12">print</button>
+
+    <style>
+        #div10 {
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        let b12 = document.querySelector('#b12');
+        let div10 = document.querySelector('#div10');
+        let computedStyle = getComputedStyle(div10);
+
+        b12.addEventListener('click', function(){
+            console.log(computedStyle.fontSize); 
+        });
+    </script> -->   
 </body>
 </html>
