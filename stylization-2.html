@@ -175,6 +175,115 @@
         b12.addEventListener('click', function(){
             console.log(computedStyle.fontSize); 
         });
-    </script> -->   
+    </script> -->  
+    
+    <!-- Стилизация классами -->
+    <!-- <div id="div11">2, 4, 6</div>
+    <div id="div12">1, 3, 5</div>
+    <style>
+        .even{
+            color: red;
+        }
+
+        .odd{
+            color: green;
+        }
+    </style>
+
+    <script>
+        let div11 = document.querySelector('#div11');
+        let div12 = document.querySelector('#div12');
+
+        const numbers = div11.innerText.split(', ').map(Number);
+        const numbers2 = div12.innerText.split(', ').map(Number);
+
+        if (numbers.some(num => num % 2 === 0)){
+            div11.className = 'even';
+        }else{
+            div11.className = 'odd';
+        }
+
+        if (numbers2.some(num => num % 2 === 0)){
+            div12.className = 'even';
+        }else{
+            div12.className = 'odd';
+        }
+    </script> -->
+
+    <!-- Один класс для стилизации -->
+    <!-- <style>
+        p.active {
+            color: red;
+        }
+
+        p:not(.active) {
+            color: black;
+        }
+    </style>
+
+    <p onclick="toggleColor(this)">click</p>
+    <p onclick="toggleColor(this)">click</p>
+    <p onclick="toggleColor(this)">click</p>
+
+    <script>
+        function toggleColor(element) {
+            element.classList.toggle('active');
+        }
+    </script> -->
+
+    <!-- Неудобство классов -->
+    <!-- <style>
+        input.valid {
+            border: 1px solid green;
+        }
+
+        input.invalid {
+            border: 1px solid red;
+        }
+    </style>
+
+    <input type="text" onblur="checkInputLength(this)">
+
+    <script>
+        function checkInputLength(input) {
+            const maxLength = 9;
+            const isValid = input.value.length <= maxLength;
+            input.classList.toggle('valid', isValid);
+            input.classList.toggle('invalid', !isValid);
+        }
+    </script> -->
+
+    <!-- Чередование стилей через data- атрибут -->
+    <!-- <style>
+        input[data-color="green"] {
+            border: 1px solid green;
+        }
+
+        input[data-color="yellow"] {
+            border: 1px solid yellow;
+        }
+
+        input[data-color="red"] {
+            border: 1px solid red;
+        }
+    </style>
+
+    <input type="text" onblur="checkNumber(this)">
+
+    <script>
+        function checkNumber(input) {
+        const value = parseFloat(input.value);
+
+        if (!isNaN(value)) {
+            if (value < 10) {
+                input.dataset.color = 'green';
+            } else if (value >= 10 && value <= 20) {
+                input.dataset.color = 'yellow';
+            } else {
+                input.dataset.color = 'red';
+            }
+        }
+        }
+    </script> -->
 </body>
 </html>
