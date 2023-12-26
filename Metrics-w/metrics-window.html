@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метрики окна</title>
+</head>
+<body>
+    <div id="elem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, unde quaerat. Assumenda dicta quod tempora ratione. Saepe fuga iusto officia suscipit veritatis illo magni, beatae architecto sed nulla sunt quisquam. Officiis sapiente rem, error officia enim sequi quod veritatis voluptas id, fuga nostrum cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores explicabo deserunt atque vero nam labore dolores quae aspernatur error accusamus sed eaque, perspiciatis quam voluptate nihil sit dolorum debitis beatae corrupti vel? Maiores reiciendis amet perspiciatis, animi provident saepe suscipit dolorem maxime incidunt sequi minus molestiae dolores enim eius.</div>
+    <button id="b1">click</button>
+    <style>
+        #elem {
+            width: 300px;
+            height: 150px;
+            margin: 50px auto;
+            padding: 25px;
+            background: #CFF5BF;
+            border: 25px solid #F0D7A1;
+            overflow: auto;
+            text-align: justify;
+        }
+    </style>
+
+    <script>
+        let elem = document.querySelector('#elem');
+        let button = document.querySelector('#b1');
+
+        button.addEventListener('click', function(){
+          // let w = document.documentElement.clientWidth;  
+          // let h = document.documentElement.clientHeight; 
+          // console.log(w);
+          // console.log(h);
+
+          // let scrollHeight = Math.max(
+          //   document.body.scrollHeight, document.documentElement.scrollHeight,
+          //   document.body.offsetHeight, document.documentElement.offsetHeight,
+          //   document.body.clientHeight, document.documentElement.clientHeight
+          // );
+
+          // console.log(scrollHeight);
+
+          // let scrollWidth = Math.max(
+          //   document.body.scrollWidth, document.documentElement.scrollWidth,
+          //   document.body.offsetWidth, document.documentElement.offsetWidth,
+          //   document.body.clientWidth, document.documentElement.clientWidth
+          // );
+
+          // console.log(scrollWidth);
+
+
+          // let x = window.pageXOffset; 
+          // let y = window.pageYOffset;
+          // console.log(x);
+          // console.log(y);
+
+          // document.documentElement.scrollTop = 300;
+          // document.documentElement.scrollTop = document.documentElement.scrollHeight - window.innerHeight - 100;
+          // document.documentElement.scrollTop = 0;
+          // document.documentElement.scrollTop = document.documentElement.scrollHeight - window.innerHeight;
+
+          // elem.scrollTo(0, 300);
+          // elem.scrollTo({
+          //   top: 0,
+          //   behavior: 'smooth'
+          // });
+          // elem.scrollTo({
+          //   top: document.documentElement.scrollHeight,
+          //   behavior: 'smooth'
+          // });
+
+          // elem.scrollBy(0, 100);
+          // elem.scrollBy(0, -100);
+          // elem.scrollBy({
+          //   top: 300,
+          //   behavior: 'smooth'
+          // });
+          // elem.scrollBy({
+          //   top: -300,
+          //   behavior: 'smooth'
+          // });
+
+          // elem.scrollIntoView(true);
+          // elem.scrollIntoView({
+          //   behavior: 'smooth',
+          //   block: 'start',
+          //   inline: 'end',
+          // });
+        });
+    </script>
+</body>
+</html>
