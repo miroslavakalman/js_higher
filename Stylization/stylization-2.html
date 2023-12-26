@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стилизация</title>
+</head>
+<body>
+    <!-- 1. Дан див и кнопка. По нажатию на кнопку задайте диву ширину в 400px, а высоту в 300px. -->
+    <!-- <div id="lorem">Lorem ipsum dolor sit amet.</div>
+    <button id="b1">click</button>
+    <script>
+        let div1 = document.querySelector('#lorem');
+        let button1 = document.querySelector('#b1');
+
+        button1.addEventListener('click', function(){
+            div1.style.width = '400px';
+            div1.style.height = '300px';
+        });
+    </script> -->
+
+    <!-- 2. Дана также кнопка. По клику на кнопку выведите ширину и высоту дива без единиц измерения. -->
+    <!-- <div id="div2" style="width: 300px; height: 200px;">text</div>
+    <button id="b2">click</button>
+    <script>
+        let div2 = document.querySelector('#div2');
+        let button2 = document.querySelector('#b2');
+
+        button2.addEventListener('click', function(){
+            let width = div2.style.width;
+            console.log(parseInt(width));
+            let height = div2.style.height;
+            console.log(parseInt(height));
+        });
+    </script> -->
+
+    <!-- 3 -->
+    <!-- <div id="div3" style="font-size: 1.5em;">text</div>
+    <button id="b3">click</button>
+    <script>
+        let div3 = document.querySelector('#div3');
+        let button3 = document.querySelector('#b3');
+
+        button3.addEventListener('click', function(){
+            let fontSize = div3.style.fontSize;
+            console.log(parseFloat(fontSize));
+        });
+    </script> -->
+
+    <!-- 4. Дана также кнопка. По клику на кнопку увеличьте ширину и высоту дива на 50px. -->
+    <!-- <div id="div4" style="width: 300px; height: 200px; border: 1px solid red;">text</div>
+    <button id="b4">click</button>
+    <script>
+        let div4 = document.querySelector('#div4');
+        let button4 = document.querySelector('#b4');
+
+        button4.addEventListener('click', function(){
+            let width2 = div4.style.width;
+            let width2nm = parseInt(width2);
+            div4.style.width = (width2nm + 50)+ 'px';
+
+            let height2 = div4.style.height;
+            let height2nm = parseInt(height2);
+            div4.style.height = (height2nm + 50)+ 'px';
+        });
+    </script> -->
+
+    <!-- 5. Дана также кнопка. По клику на кнопку увеличьте ширину и высоту дива на 10%. -->
+    <!-- <div id="div5" style="width: 300px; height: 200px; border: 1px solid red;">text</div>
+    <button id="b5">click</button>
+    <script>
+        let div5 = document.querySelector('#div5');
+        let button5 = document.querySelector('#b5');
+
+        button5.addEventListener('click', function(){
+            let width3 = div5.style.width;
+            let width3nm = parseInt(width3)*1.1;
+            div5.style.width = width3nm + 'px';
+
+            let height3 = div5.style.height;
+            let height3nm = parseInt(height3)*1.1;
+            div5.style.height = height3nm + 'px';
+        });
+    </script> -->
+
+    <!-- Распаковка значений -->
+    <!-- <div id="div6" style="width: 300px; height: 200px; border: 1px solid red;">
+        text
+    </div>
+    <button id="b6">click</button>
+    <script>
+        let div6 = document.querySelector('#div6');
+        let button6 = document.querySelector('#b6');
+
+        button6.addEventListener('click', function(){
+            console.log(div6.style.width);
+            console.log(div6.style.height);
+            console.log(div6.style.border);
+        });
+    </script> -->
+
+    <!-- Сброс стилей через style -->
+    <!-- 1 -->
+    <!-- <div id="div7">Lorem, ipsum dolor.</div>
+    <button id="b7">hide</button>
+    <button id="b8">show</button>
+    <script>
+        let div7 = document.querySelector('#div7');
+        let button7 = document.querySelector('#b7');
+        let button8 = document.querySelector('#b8');
+
+        button7.addEventListener('click', function(){
+            div7.style.display = 'none';
+        });
+
+        button8.addEventListener('click', function(){
+            div7.style.display = 'block';
+        });
+    </script> -->
+
+    <!-- 2 -->
+    <!-- <div id="div8">Lorem, ipsum dolor.</div>
+    <button id="b9">red</button>
+    <button id="b10">none</button>
+    <script>
+        let div8 = document.querySelector('#div8');
+        let button9 = document.querySelector('#b9');
+        let button10 = document.querySelector('#b10');
+
+        button9.addEventListener('click', function(){
+            div8.style.backgroundColor = 'red';
+        });
+
+        button10.addEventListener('click', function(){
+            div8.style.background = 'none';
+        });
+    </script>  -->
+
+    <!-- Чтение свойств из CSS файлов в JavaScript -->
+    <!-- 1 -->
+    <!-- <div id="div9">
+        text
+    </div>
+    <button id="b11">print</button>
+
+    <style>
+        #div9 {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        let div9 = document.querySelector('#div9');
+        let computedStyle = getComputedStyle(div9);
+        console.log(computedStyle.width, computedStyle.height); 
+    </script> -->
+
+    <!-- Преобразование прочитанных значений  -->
+    <!-- <div id="div10">
+        text
+    </div>
+    <button id="b12">print</button>
+
+    <style>
+        #div10 {
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        let b12 = document.querySelector('#b12');
+        let div10 = document.querySelector('#div10');
+        let computedStyle = getComputedStyle(div10);
+
+        b12.addEventListener('click', function(){
+            console.log(computedStyle.fontSize); 
+        });
+    </script> -->  
+    
+    <!-- Стилизация классами -->
+    <!-- <div id="div11">2, 4, 6</div>
+    <div id="div12">1, 3, 5</div>
+    <style>
+        .even{
+            color: red;
+        }
+
+        .odd{
+            color: green;
+        }
+    </style>
+
+    <script>
+        let div11 = document.querySelector('#div11');
+        let div12 = document.querySelector('#div12');
+
+        const numbers = div11.innerText.split(', ').map(Number);
+        const numbers2 = div12.innerText.split(', ').map(Number);
+
+        if (numbers.some(num => num % 2 === 0)){
+            div11.className = 'even';
+        }else{
+            div11.className = 'odd';
+        }
+
+        if (numbers2.some(num => num % 2 === 0)){
+            div12.className = 'even';
+        }else{
+            div12.className = 'odd';
+        }
+    </script> -->
+
+    <!-- Один класс для стилизации -->
+    <!-- <style>
+        p.active {
+            color: red;
+        }
+
+        p:not(.active) {
+            color: black;
+        }
+    </style>
+
+    <p onclick="toggleColor(this)">click</p>
+    <p onclick="toggleColor(this)">click</p>
+    <p onclick="toggleColor(this)">click</p>
+
+    <script>
+        function toggleColor(element) {
+            element.classList.toggle('active');
+        }
+    </script> -->
+
+    <!-- Неудобство классов -->
+    <!-- <style>
+        input.valid {
+            border: 1px solid green;
+        }
+
+        input.invalid {
+            border: 1px solid red;
+        }
+    </style>
+
+    <input type="text" onblur="checkInputLength(this)">
+
+    <script>
+        function checkInputLength(input) {
+            const maxLength = 9;
+            const isValid = input.value.length <= maxLength;
+            input.classList.toggle('valid', isValid);
+            input.classList.toggle('invalid', !isValid);
+        }
+    </script> -->
+
+    <!-- Чередование стилей через data- атрибут -->
+    <!-- <style>
+        input[data-color="green"] {
+            border: 1px solid green;
+        }
+
+        input[data-color="yellow"] {
+            border: 1px solid yellow;
+        }
+
+        input[data-color="red"] {
+            border: 1px solid red;
+        }
+    </style>
+
+    <input type="text" onblur="checkNumber(this)">
+
+    <script>
+        function checkNumber(input) {
+        const value = parseFloat(input.value);
+
+        if (!isNaN(value)) {
+            if (value < 10) {
+                input.dataset.color = 'green';
+            } else if (value >= 10 && value <= 20) {
+                input.dataset.color = 'yellow';
+            } else {
+                input.dataset.color = 'red';
+            }
+        }
+        }
+    </script> -->
+</body>
+</html>
