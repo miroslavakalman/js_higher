@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метрики элементов</title>
+</head>
+<body>
+    <div id="elem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, unde quaerat. Assumenda dicta quod tempora ratione. Saepe fuga iusto officia suscipit veritatis illo magni, beatae architecto sed nulla sunt quisquam. Officiis sapiente rem, error officia enim sequi quod veritatis voluptas id, fuga nostrum cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores explicabo deserunt atque vero nam labore dolores quae aspernatur error accusamus sed eaque, perspiciatis quam voluptate nihil sit dolorum debitis beatae corrupti vel? Maiores reiciendis amet perspiciatis, animi provident saepe suscipit dolorem maxime incidunt sequi minus molestiae dolores enim eius.</div>
+    <button id="b1">click</button>
+    <style>
+        #elem {
+            width: 300px;
+            height: 150px;
+            margin: 50px auto;
+            padding: 25px;
+            background: #CFF5BF;
+            border: 25px solid #F0D7A1;
+            overflow: auto;
+            text-align: justify;
+        }
+    </style>
+
+    <script>
+        let elem = document.querySelector('#elem');
+        let button = document.querySelector('#b1');
+
+        button.addEventListener('click', function(){
+            // console.log(elem.clientWidth);  
+            // console.log(elem.clientHeight);
+
+            // console.log(elem.offsetWidth); 
+            // console.log(elem.offsetHeight);
+
+            // console.log(elem.scrollWidth); 
+            // console.log(elem.scrollHeight); 
+
+            // elem.scrollTop = elem.scrollTop + 100;
+            // elem.scrollLeft = elem.scrollLeft + 50;
+            // console.log(elem.scrollTop);
+            // console.log(elem.scrollLeft); 
+
+            // elem.scrollTop = elem.scrollTop + 50;
+            // console.log(elem.scrollTop);
+
+            // elem.scrollTop = elem.scrollHeight - elem.clientHeight;
+            // elem.style.height = elem.scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>
