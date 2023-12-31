@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas width="200" height="200" style="background: #f4f4f4;"></canvas>
+
+	<script>
+		let canvas = document.querySelector('canvas');
+		let ctx = canvas.getContext('2d');
+
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(100, 50);
+		// ctx.stroke();
+
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(50, 100);
+		// ctx.stroke();
+		
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(100, 100);
+		// ctx.moveTo(100, 50);
+		// ctx.lineTo(50, 100);
+		// ctx.stroke();
+
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(50, 100);
+		// ctx.lineTo(100, 100);
+		// ctx.lineTo(100, 50);
+		// ctx.closePath();
+		// ctx.stroke();
+				
+		// ctx.beginPath();
+		// ctx.moveTo(100, 50);
+		// ctx.lineTo(50, 100);
+		// ctx.lineTo(150, 100);
+		// ctx.closePath();
+		// ctx.stroke();
+
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(150, 50);
+		// ctx.moveTo(130, 30);
+		// ctx.lineTo(150, 50);
+		// ctx.moveTo(130, 70);
+		// ctx.lineTo(150, 50);
+		// ctx.stroke();
+
+		// ctx.beginPath();
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(50, 100);
+		// ctx.lineTo(100, 100);
+		// ctx.lineTo(100, 50);
+		// ctx.fill();
+
+		// ctx.beginPath();
+		// ctx.moveTo(100, 50);
+		// ctx.lineTo(50, 150);
+		// ctx.lineTo(150, 150);
+		// ctx.fill();
+
+		//263
+		// ctx.strokeRect(25, 25, 100, 100);
+		// ctx.fillRect(25, 25, 100, 100);
+	
+		// ctx.rect(25, 25, 120, 100);
+		// ctx.fill();
+
+		// ctx.fillRect(25, 25, 100, 100);
+		// ctx.clearRect(40, 40, 50, 50);
+
+
+		//264
+		// ctx.arc(100, 100, 50, 0, getRadians(360));
+		// ctx.stroke();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+					
+		// ctx.arc(100, 100, 50, 0, getRadians(360));
+		// ctx.fill();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+
+		// ctx.arc(100, 100, 50, 0, getRadians(180));
+		// ctx.stroke();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+
+		// ctx.arc(100, 100, 50, 0, getRadians(180));
+		// ctx.closePath();
+		// ctx.stroke();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+
+		// ctx.arc(100, 100, 50, 0, getRadians(180));
+		// ctx.fill();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+
+		// ctx.arc(100, 100, 50, 0, getRadians(90));
+		// ctx.fill();
+		// function getRadians(degrees) {
+		// 	return (Math.PI/180)*degrees;
+		// }
+
+		//265
+		// ctx.strokeStyle = 'red';
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(150, 50);
+		// ctx.stroke();
+
+		// ctx.beginPath();
+		// ctx.strokeStyle = 'red';
+		// ctx.moveTo(50, 50);
+		// ctx.lineTo(150, 50);
+		// ctx.stroke();
+		// ctx.beginPath();
+		// ctx.strokeStyle = 'green';
+		// ctx.moveTo(50, 60);
+		// ctx.lineTo(150, 60);
+		// ctx.stroke();
+
+		// ctx.fillStyle = 'green';
+		// ctx.fillRect(50, 50, 100, 100);
+		
+		// ctx.fillStyle = 'green';
+		// ctx.fillRect(75, 30, 50, 50);
+		// ctx.fillStyle = 'red';
+		// ctx.fillRect(75, 100, 50, 50);
+
+
+		//267
+		// for (let i = 1; i <= 10; i++) {
+		// 	ctx.moveTo(50, 10*i + 40);
+		// 	ctx.lineTo(150, 10*i + 40);
+		// }
+		// ctx.stroke();
+
+		for (let i = 1; i <= 10; i++) {
+			ctx.moveTo(40, 10*i + 40);
+			ctx.lineTo(150, 10*i + 40);
+		}
+		for (let i = 1; i <= 10; i++) {
+			ctx.moveTo(10*i + 40, 40);
+			ctx.lineTo(10*i + 40, 150);
+		}
+		ctx.stroke();
+	</script>
+</body>
+</html>
