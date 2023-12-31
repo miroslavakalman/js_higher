@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные</title>
+</head>
+<body>
+    <!-- <button id="addButton">Добавить элемент</button>
+    <p>Исходный массив: <span id="originalArray"></span></p>
+    <p>Новый массив: <span id="newArray"></span></p>
+
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        const originalArray = document.getElementById('originalArray');
+        const newArray = document.getElementById('newArray');
+
+        function renderArrays() {
+            originalArray.textContent = JSON.stringify(arr);
+            newArray.textContent = JSON.stringify([...arr]);
+        }
+
+        renderArrays();
+
+        document.getElementById('addButton').addEventListener('click', function() {
+            arr = [...arr, arr.length + 1];
+
+            renderArrays();
+        });
+    </script> -->
+
+    <!-- <button id="removeButton">Удалить элемент</button>
+    <p>Исходный массив: <span id="originalArray"></span></p>
+    <p>Новый массив: <span id="newArray"></span></p>
+
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        const originalArray = document.getElementById('originalArray');
+        const newArray = document.getElementById('newArray');
+
+        function renderArrays() {
+            originalArray.textContent = JSON.stringify(arr);
+            newArray.textContent = JSON.stringify([...arr]);
+        }
+
+        renderArrays();
+
+        document.getElementById('removeButton').addEventListener('click', function() {
+            let ind = 2;
+
+            arr = [
+                ...arr.slice(0, ind),
+                ...arr.slice(ind + 1)
+            ];
+
+            renderArrays();
+        });
+    </script> -->
+
+    <!-- <button id="changeButton">Изменить элемент</button>
+    <p>Исходный массив: <span id="originalArray"></span></p>
+    <p>Новый массив: <span id="newArray"></span></p>
+
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        const originalArray = document.getElementById('originalArray');
+        const newArray = document.getElementById('newArray');
+
+        function renderArrays() {
+            originalArray.textContent = JSON.stringify(arr);
+            newArray.textContent = JSON.stringify([...arr]);
+        }
+
+        renderArrays();
+
+        document.getElementById('changeButton').addEventListener('click', function() {
+            let ind = 2;
+
+            arr = [
+                ...arr.slice(0, ind),
+                '!',
+                ...arr.slice(ind + 1)
+            ];
+
+            renderArrays();
+        });
+    </script> -->
+
+    <button id="addButton">Добавить элемент</button>
+    <p>Исходный массив: <span id="originalArray"></span></p>
+    <p>Новый элемент: <span id="newElement"></span></p>
+
+    <script>
+        let arr = [
+            {
+                id: 'GYi9GauC4gBF1e2SixDvu',
+                prop1: 'value11',
+                prop2: 'value12',
+                prop3: 'value13',
+            },
+            {
+                id: 'IWSpfBPSV3SXgRF87uO74',
+                prop1: 'value21',
+                prop2: 'value22',
+                prop3: 'value23',
+            },
+            {
+                id: 'JAmjRlfQT8rLTm5tG2m1L',
+                prop1: 'value31',
+                prop2: 'value32',
+                prop3: 'value33',
+            },
+        ];
+
+        const originalArray = document.getElementById('originalArray');
+        const newElementDisplay = document.getElementById('newElement');
+
+        function renderArrays() {
+            originalArray.textContent = JSON.stringify(arr);
+            newElementDisplay.textContent = JSON.stringify(arr[arr.length - 1]);
+        }
+
+        renderArrays();
+
+        document.getElementById('addButton').addEventListener('click', function() {
+            function generateId() {
+                return Math.random().toString(36).substr(2, 10);
+            }
+
+            let newElem = {
+                id: generateId(),
+                prop1: 'newValue1',
+                prop2: 'newValue2',
+                prop3: 'newValue3',
+            };
+
+            arr = [
+                ...arr,
+                newElem
+            ];
+            renderArrays();
+        });
+	</script>
+</body>
+</html>
